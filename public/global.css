@@ -1,3 +1,8 @@
+:root{
+	--nttb-orange: #f4612d;
+	--nttb-blue: rgb(38, 42, 204);
+}
+
 html, body {
 	position: relative;
 	width: 100%;
