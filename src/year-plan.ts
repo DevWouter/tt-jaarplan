@@ -1,4 +1,4 @@
-import { isBefore, isAfter, differenceInDays, parseISO, eachDayOfInterval, startOfWeek } from "date-fns";
+import { isBefore, isAfter, differenceInDays, parseISO, eachDayOfInterval, startOfWeek, parse } from "date-fns";
 
 import type { TrainingDay } from "./training-day";
 
@@ -62,9 +62,14 @@ yearPlan.competitions.push({
 
 yearPlan.vacationPeriods = [
   {
+    name: "Kerstvakantie 2021",
+    start: parseISO("2020-12-19"),
+    end: parseISO("2020-01-03")
+  },
+  {
     name: "Voorjaarsvakantie 2021",
     start: parseISO("2021-02-20"),
-    end: parseISO("2021-03-28"),
+    end: parseISO("2021-02-28"),
   },
   {
     name: "Meivakantie 2021",
