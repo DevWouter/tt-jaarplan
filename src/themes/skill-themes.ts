@@ -37,10 +37,6 @@ export const FH_SideSpin: ThemeSkill = {
   name: "FH - zijspin",
 };
 
-export const FH_TS_on_BS: ThemeSkill = {
-  name: "FH - TS op BS"
-};
-
 export const BH_TS: ThemeSkill = {
   name: "BH - topspin",
 };
