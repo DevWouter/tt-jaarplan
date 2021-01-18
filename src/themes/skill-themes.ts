@@ -20,7 +20,6 @@ export const FH_TS: ThemeSkill = {
   name: "FH - topspin",
 };
 
-
 export const FH_BS: ThemeSkill = {
   name: "FH - backspin",
 };
@@ -52,7 +51,6 @@ export const BH_Push: ThemeSkill = {
 export const BH_Chop: ThemeSkill = {
   name: "BH - kappen",
 };
-
 
 export const BH_SideSpin: ThemeSkill = {
   name: "BH - zijspin",
