@@ -8,8 +8,8 @@
   const routePeriod = routeData.routePeriod;
 </script>
 
+<div class="header"><AppHeader plan={$routePlan} period={$routePeriod} /></div>
 <main>
-  <AppHeader plan={$routePlan} period={$routePeriod} />
   {#if $routePeriod}
     <PeriodView period={$routePeriod} plan={$routePlan} />
   {:else}
@@ -18,4 +18,9 @@
 </main>
 
 <style>
+  .header {
+    background: white;
+    position: sticky;
+    top: 0;
+  }
 </style>
