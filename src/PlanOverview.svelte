@@ -44,7 +44,7 @@
 <VacationListView {plan} />
 
 <h3 id="h_reviews">Alle reviews</h3>
-<ReviewListView {plan} />
+<ReviewListView planOrPeriod={plan} />
 
 <h3 id="h_themes">Thema Matrix</h3>
 <PlanOverviewThemes {plan} />
