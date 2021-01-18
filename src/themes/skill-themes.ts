@@ -3,54 +3,69 @@ import type { ThemeSkill } from "../types/theme";
 export const service_basic: ThemeSkill = {
   name: "Service (basis)"
 };
-export const return_basic: ThemeSkill = {
-  name: "Service ontvangen (basis)"
-};
 
 export const service_effect: ThemeSkill = {
-  name: "Serveren met effect",
+  name: "Service (effect)",
+};
+
+export const return_basic: ThemeSkill = {
+  name: "Service ontvangst (basis)"
 };
 
 export const return_flip: ThemeSkill = {
-  name: "Flip op de ontvangst",
+  name: "Service ontvangst (flip)",
 };
 
 export const FH_TS: ThemeSkill = {
-  name: "Forehand topspin",
+  name: "FH - topspin",
 };
 
-export const TS_Blocking: ThemeSkill = {
-  name: "Topspin blokken"
-}
 
-export const BH_TS: ThemeSkill = {
-  name: "Backhand topspin",
-};
-
-export const FH_TS_CounterSpin: ThemeSkill = {
-  name: "Forehand topspin (counter-spin)",
+export const FH_BS: ThemeSkill = {
+  name: "FH - backspin",
 };
 
 export const FH_Push: ThemeSkill = {
-  name: "Forehand Schuiven",
+  name: "FH - schuiven",
 };
 
-export const BH_Push: ThemeSkill = {
-  name: "Backhand Schuiven",
-};
-
-export const BH_TS_CounterSpin: ThemeSkill = {
-  name: "Backhand topspin (counter-spin)",
+export const FH_Chop: ThemeSkill = {
+  name: "FH - kappen",
 };
 
 export const FH_SideSpin: ThemeSkill = {
-  name: "Forehand waar je zijspin toevoegt",
-};
-
-export const FH_Smash: ThemeSkill = {
-  name: "Forehand Smash"
+  name: "FH - zijspin",
 };
 
 export const FH_TS_on_BS: ThemeSkill = {
-  name: "Forehand TS op BS"
+  name: "FH - TS op BS"
 };
+
+export const BH_TS: ThemeSkill = {
+  name: "BH - topspin",
+};
+
+export const BH_BS: ThemeSkill = {
+  name: "BH - backspin",
+};
+
+export const BH_Push: ThemeSkill = {
+  name: "BH - schuiven",
+};
+
+export const BH_Chop: ThemeSkill = {
+  name: "BH - kappen",
+};
+
+
+export const BH_SideSpin: ThemeSkill = {
+  name: "BH - zijspin",
+};
+
+export const Smash_BothHands: ThemeSkill = {
+  name: "FH/BH - Smash "
+};
+
+export const TS_Blocking: ThemeSkill = {
+  name: "Blokken - Topspin"
+}

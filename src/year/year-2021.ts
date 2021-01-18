@@ -112,7 +112,7 @@ year2021.trainingPeriods.push({
   title: "Initatief tijdens rally overnemen/afpakken",
   themes: {
     physical: [PhysicalThemes.explosivePower],
-    skill: [SkillThemes.FH_TS, SkillThemes.BH_TS, SkillThemes.FH_TS_CounterSpin, SkillThemes.BH_TS_CounterSpin],
+    skill: [SkillThemes.FH_TS, SkillThemes.BH_TS],
     tactical: [TacticalThemes.attack_the_body],
     mental: [MentalityThemes.courage],
   },
@@ -152,7 +152,7 @@ year2021.trainingPeriods.push({
   title: "Fijn de vakantie in gaan",
   themes: {
     physical: [PhysicalThemes.explosivePower],
-    skill: [SkillThemes.FH_TS, SkillThemes.FH_Smash, SkillThemes.FH_SideSpin],
+    skill: [SkillThemes.FH_TS, SkillThemes.Smash_BothHands, SkillThemes.FH_SideSpin],
     tactical: [TacticalThemes.disrupt_opponent],
     mental: [MentalityThemes.handeling_disruption],
   },
@@ -166,7 +166,7 @@ year2021.trainingPeriods.push({
   themes: {
     physical: [PhysicalThemes.endurance],
     // Ik zit hier sterk te denken aan schuiven, waarna men omloopt en overschake
-    skill: [SkillThemes.FH_Push, SkillThemes.FH_TS_on_BS, SkillThemes.service_basic, SkillThemes.return_basic],
+    skill: [SkillThemes.FH_Push, SkillThemes.service_basic, SkillThemes.return_basic],
     tactical: [TacticalThemes.detecting_opportunity_rally, TacticalThemes.prevent_gameplan, TacticalThemes.service_reading],
     mental: [MentalityThemes.training_mentality],
   },
@@ -179,7 +179,7 @@ year2021.trainingPeriods.push({
   title: "Schuiven (basis) & competitie begint",
   themes: {
     physical: [PhysicalThemes.control],
-    skill: [SkillThemes.BH_Push, SkillThemes.FH_Push, SkillThemes.FH_Smash],
+    skill: [SkillThemes.BH_Push, SkillThemes.FH_Push, SkillThemes.Smash_BothHands],
     tactical: [TacticalThemes.coaching_team, TacticalThemes.attack_the_body],
     mental: [MentalityThemes.patience],
   },
@@ -192,7 +192,7 @@ year2021.trainingPeriods.push({
   title: "Shuiven overnemen en aanvallen",
   themes: {
     physical: [PhysicalThemes.explosivePower, PhysicalThemes.speed],
-    skill: [SkillThemes.BH_Push, SkillThemes.BH_TS_CounterSpin, SkillThemes.FH_TS_CounterSpin],
+    skill: [SkillThemes.BH_Push, SkillThemes.BH_Chop],
     tactical: [TacticalThemes.detecting_opportunity_rally, TacticalThemes.attack_on_the_edge],
     mental: [MentalityThemes.courage],
   },
@@ -219,7 +219,7 @@ year2021.trainingPeriods.push({
   title: "Einde van het jaar",
   themes: {
     physical: [PhysicalThemes.explosivePower, PhysicalThemes.movementEconomy],
-    skill: [SkillThemes.FH_Smash, SkillThemes.FH_SideSpin, SkillThemes.service_effect],
+    skill: [SkillThemes.Smash_BothHands, SkillThemes.FH_SideSpin, SkillThemes.service_effect],
     tactical: [TacticalThemes.coaching_team],
     mental: [MentalityThemes.fun]
   },
