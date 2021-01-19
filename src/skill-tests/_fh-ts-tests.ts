@@ -22,6 +22,6 @@ export const FH_TS__near_the_edge_with_cards: SkillTest = {
     skill: [SkillThemes.FH_TS],
     physical: [PhysicalThemes.control],
     mental: [MentalityThemes.courage, MentalityThemes.improve_task_orientated_thinking],
-    tactical: [TacticalThemes.attack_on_the_edge]
+    tactical: [TacticalThemes.placement_side]
   }
 };

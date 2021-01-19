@@ -6,9 +6,9 @@ export const Service_TargetElimination_1m: SkillTest = {
   how: `Speler probeert binnen 1 minuut zoveel mogelijk bekertjes die op tafel staan te ` +
     `raken van serveren. Elke geraakt doel met een correcte service is een punt.`,
   relatedThemes: {
-    skill: [SkillThemes.service_basic],
+    skill: [SkillThemes.service_placement],
     physical: [PhysicalThemes.balance, PhysicalThemes.control],
     mental: [MentalityThemes.improve_task_orientated_thinking, MentalityThemes.patience],
-    tactical: [TacticalThemes.service_placement]
+    tactical: [TacticalThemes.placement_service]
   }
 };

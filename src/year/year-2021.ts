@@ -62,8 +62,8 @@ year2021.trainingPeriods.push({
   notes: "We herstart na een lange periode van de corona. Periode kan verschoven worden.",
   themes: {
     physical: [PhysicalThemes.endurance],
-    skill: [SkillThemes.service_basic, SkillThemes.return_basic],
-    tactical: [TacticalThemes.service_placement],
+    skill: [SkillThemes.service_placement],
+    tactical: [TacticalThemes.placement_service],
     mental: [MentalityThemes.training_mentality],
   },
   reviews: [
@@ -79,7 +79,7 @@ year2021.trainingPeriods.push({
   themes: {
     physical: [PhysicalThemes.movementEconomy],
     skill: [SkillThemes.FH_TS],
-    tactical: [TacticalThemes.attack_on_the_edge],
+    tactical: [TacticalThemes.placement_side],
     mental: [MentalityThemes.improve_task_orientated_thinking],
   },
   reviews: [
@@ -98,8 +98,8 @@ year2021.trainingPeriods.push({
   title: "Rally (blokken)",
   themes: {
     physical: [PhysicalThemes.control],
-    skill: [SkillThemes.TS_Blocking, SkillThemes.BH_TS, SkillThemes.FH_TS,],
-    tactical: [TacticalThemes.detecting_opportunity_rally],
+    skill: [SkillThemes.FH_block, SkillThemes.BH_TS, SkillThemes.FH_TS,],
+    tactical: [TacticalThemes.opening_rally],
     mental: [MentalityThemes.handling_failure],
   },
   reviews: [
@@ -113,7 +113,7 @@ year2021.trainingPeriods.push({
   themes: {
     physical: [PhysicalThemes.explosivePower],
     skill: [SkillThemes.FH_TS, SkillThemes.BH_TS],
-    tactical: [TacticalThemes.attack_the_body],
+    tactical: [TacticalThemes.placement_opponent],
     mental: [MentalityThemes.courage],
   },
   reviews: []
@@ -125,8 +125,8 @@ year2021.trainingPeriods.push({
   title: "Einde voorjaarscompetitie vieren",
   themes: {
     physical: [PhysicalThemes.balance],
-    skill: [SkillThemes.service_basic, SkillThemes.return_flip],
-    tactical: [TacticalThemes.service_variation],
+    skill: [SkillThemes.service_placement, SkillThemes.FH_flip, SkillThemes.BH_flip],
+    tactical: [TacticalThemes.variation_service],
     mental: [MentalityThemes.fun],
   },
   reviews: []
@@ -138,8 +138,8 @@ year2021.trainingPeriods.push({
   title: "Schuiven en coachen",
   themes: {
     physical: [PhysicalThemes.balance],
-    skill: [SkillThemes.BH_Push, SkillThemes.FH_Push],
-    tactical: [TacticalThemes.coaching_team],
+    skill: [SkillThemes.BH_push, SkillThemes.FH_push],
+    tactical: [TacticalThemes.coaching],
     mental: [MentalityThemes.improving_external_focus],
   },
   reviews: []
@@ -152,8 +152,8 @@ year2021.trainingPeriods.push({
   title: "Fijn de vakantie in gaan",
   themes: {
     physical: [PhysicalThemes.explosivePower],
-    skill: [SkillThemes.FH_TS, SkillThemes.Smash_BothHands, SkillThemes.FH_SideSpin],
-    tactical: [TacticalThemes.disrupt_opponent],
+    skill: [SkillThemes.FH_TS, SkillThemes.FH_smash, SkillThemes.FH_sidespin],
+    tactical: [TacticalThemes.disrupt_skill],
     mental: [MentalityThemes.handeling_disruption],
   },
   reviews: []
@@ -166,8 +166,8 @@ year2021.trainingPeriods.push({
   themes: {
     physical: [PhysicalThemes.endurance],
     // Ik zit hier sterk te denken aan schuiven, waarna men omloopt en overschake
-    skill: [SkillThemes.FH_Push, SkillThemes.service_basic, SkillThemes.return_basic],
-    tactical: [TacticalThemes.detecting_opportunity_rally, TacticalThemes.prevent_gameplan, TacticalThemes.service_reading],
+    skill: [SkillThemes.FH_push, SkillThemes.service_placement],
+    tactical: [TacticalThemes.opening_rally, TacticalThemes.disrupt_mentality, TacticalThemes.analyse_service],
     mental: [MentalityThemes.training_mentality],
   },
   reviews: []
@@ -179,8 +179,8 @@ year2021.trainingPeriods.push({
   title: "Schuiven (basis) & competitie begint",
   themes: {
     physical: [PhysicalThemes.control],
-    skill: [SkillThemes.BH_Push, SkillThemes.FH_Push, SkillThemes.Smash_BothHands],
-    tactical: [TacticalThemes.coaching_team, TacticalThemes.attack_the_body],
+    skill: [SkillThemes.BH_push, SkillThemes.FH_push, SkillThemes.FH_smash],
+    tactical: [TacticalThemes.coaching, TacticalThemes.placement_opponent],
     mental: [MentalityThemes.patience],
   },
   reviews: []
@@ -192,8 +192,8 @@ year2021.trainingPeriods.push({
   title: "Shuiven overnemen en aanvallen",
   themes: {
     physical: [PhysicalThemes.explosivePower, PhysicalThemes.speed],
-    skill: [SkillThemes.BH_Push, SkillThemes.BH_Chop],
-    tactical: [TacticalThemes.detecting_opportunity_rally, TacticalThemes.attack_on_the_edge],
+    skill: [SkillThemes.BH_push, SkillThemes.BH_chop],
+    tactical: [TacticalThemes.opening_rally, TacticalThemes.placement_side],
     mental: [MentalityThemes.courage],
   },
   reviews: []
@@ -206,8 +206,8 @@ year2021.trainingPeriods.push({
   title: "Korte ballen & einde competitie",
   themes: {
     physical: [PhysicalThemes.control, PhysicalThemes.balance],
-    skill: [SkillThemes.TS_Blocking, SkillThemes.FH_TS],
-    tactical: [TacticalThemes.service_variation, TacticalThemes.short_balls],
+    skill: [SkillThemes.FH_block, SkillThemes.FH_TS],
+    tactical: [TacticalThemes.variation_service, TacticalThemes.placement_distance],
     mental: [MentalityThemes.improve_task_orientated_thinking],
   },
   reviews: []
@@ -219,8 +219,8 @@ year2021.trainingPeriods.push({
   title: "Einde van het jaar",
   themes: {
     physical: [PhysicalThemes.explosivePower, PhysicalThemes.movementEconomy],
-    skill: [SkillThemes.Smash_BothHands, SkillThemes.FH_SideSpin, SkillThemes.service_effect],
-    tactical: [TacticalThemes.coaching_team],
+    skill: [SkillThemes.FH_smash, SkillThemes.FH_sidespin, SkillThemes.service_effect],
+    tactical: [TacticalThemes.coaching],
     mental: [MentalityThemes.fun]
   },
   reviews: []

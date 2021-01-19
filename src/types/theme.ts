@@ -16,4 +16,6 @@ export interface ThemeSkill extends ThemeBase {
 }
 
 export interface ThemeTactical extends ThemeBase {
+  name: string;
+  description: string;
 }

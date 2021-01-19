@@ -17,6 +17,8 @@
 
   export var plan: TrainingPlan;
 
+  var sortByUsage = false;
+
   interface ThemeCounter {
     key: string;
     name: string;
@@ -44,44 +46,67 @@
     });
   }
 
-  var physicalThemeCounters: ThemeCounter[] = getThemeCounter<ThemePhysical>(
-    Object.entries(PhysicalThemes),
-    (x: TrainingPeriod) => x.themes.physical
-  );
+  var physicalThemeCounters: ThemeCounter[];
+  var physicalPeriodCounters: number[];
+  var skillThemeCounters: ThemeCounter[];
+  var skillPeriodCounters: number[];
+  var tacticalThemeCounters: ThemeCounter[];
+  var tacticalPeriodCounters: number[];
+  var mentalityThemeCounters: ThemeCounter[];
+  var mentalityPeriodCounters: number[];
+  $: {
+    physicalThemeCounters = getThemeCounter<ThemePhysical>(
+      Object.entries(PhysicalThemes),
+      (x: TrainingPeriod) => x.themes.physical
+    );
 
-  var physicalPeriodCounters = plan.trainingPeriods.map(
-    (x) => x.themes?.physical.length ?? 0
-  );
+    physicalPeriodCounters = plan.trainingPeriods.map(
+      (x) => x.themes?.physical.length ?? 0
+    );
 
-  var skillThemeCounters: ThemeCounter[] = getThemeCounter<ThemeSkill>(
-    Object.entries(SkillThemes),
-    (x: TrainingPeriod) => x.themes.skill
-  );
+    skillThemeCounters = getThemeCounter<ThemeSkill>(
+      Object.entries(SkillThemes),
+      (x: TrainingPeriod) => x.themes.skill
+    );
 
-  var skillPeriodCounters = plan.trainingPeriods.map(
-    (x) => x.themes?.skill.length ?? 0
-  );
+    skillPeriodCounters = plan.trainingPeriods.map(
+      (x) => x.themes?.skill.length ?? 0
+    );
 
-  var tacticalThemeCounters: ThemeCounter[] = getThemeCounter<ThemeTactical>(
-    Object.entries(TacticalThemes),
-    (x: TrainingPeriod) => x.themes.tactical
-  );
+    tacticalThemeCounters = getThemeCounter<ThemeTactical>(
+      Object.entries(TacticalThemes),
+      (x: TrainingPeriod) => x.themes.tactical
+    );
 
-  var tacticalPeriodCounters = plan.trainingPeriods.map(
-    (x) => x.themes?.tactical.length ?? 0
-  );
+    tacticalPeriodCounters = plan.trainingPeriods.map(
+      (x) => x.themes?.tactical.length ?? 0
+    );
 
-  var mentalityThemeCounters: ThemeCounter[] = getThemeCounter<ThemeMentality>(
-    Object.entries(MentalityThemes),
-    (x: TrainingPeriod) => x.themes.mental
-  );
+    mentalityThemeCounters = getThemeCounter<ThemeMentality>(
+      Object.entries(MentalityThemes),
+      (x: TrainingPeriod) => x.themes.mental
+    );
 
-  var mentalityPeriodCounters = plan.trainingPeriods.map(
-    (x) => x.themes?.mental.length ?? 0
-  );
+    mentalityPeriodCounters = plan.trainingPeriods.map(
+      (x) => x.themes?.mental.length ?? 0
+    );
+
+    if (sortByUsage) {
+      const sortFunc = (a: { total: number }, b: { total: number }) =>
+        b.total - a.total;
+
+      physicalThemeCounters = physicalThemeCounters.sort(sortFunc);
+      skillThemeCounters = skillThemeCounters.sort(sortFunc);
+      tacticalThemeCounters = tacticalThemeCounters.sort(sortFunc);
+      mentalityThemeCounters = mentalityThemeCounters.sort(sortFunc);
+    }
+  }
 </script>
 
 <!-- Show overview of all themes and when they are being used -->
+<button on:click={() => (sortByUsage = !sortByUsage)}
+  >{sortByUsage ? "Herstel volgorde" : "Sorteer op gebruik"}</button
+>
 
 <PlanOverviewThemesSingle
   title="Fysieke thema's"
